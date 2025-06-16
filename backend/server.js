@@ -62,11 +62,11 @@ app.post("/addUser", async (req, res) => {
       to: userObj.email,
       subject: 'College Application Confirmation',
       html: `
-        <h2>Dear ${userObj.name},</h2>
+        <h2>Dear ${userObj.username},</h2>
         <p>Thank you for submitting your college application to Simon University.</p>
         <p>We have received your application and will review it shortly. Here are the details we received:</p>
         <ul>
-          <li>Name: ${userObj.name}</li>
+          <li>Name: ${userObj.username}</li>
           <li>Email: ${userObj.email}</li>
         </ul>
         <p>We will contact you soon regarding the next steps in the application process.</p>
