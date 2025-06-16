@@ -93,7 +93,7 @@
 
                     <div class="signup-section">
                         <h2>Create Your Account</h2>
-                        <form action="http://localhost:5050/addUser" method="POST" id="signupForm">
+                        <form action="https://college-backend-8dul.onrender.com/addUser" method="POST" id="signupForm">
 
                             <div class="field">
                                 <label for="email">Email Address</label>
@@ -174,7 +174,7 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
         password: formData.get('password')
     };
 
-    fetch("http://localhost:5050/addUser", {
+    fetch("https://college-backend-8dul.onrender.com/addUser", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
