@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Toronto University - Dockers Site</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="accessibility">
+                    <button class="access-btn"><i class="fas fa-text-height"></i> Registration for the new semester</button>
+                    <button class="access-btn"><i class="fas fa-adjust"></i> Toronto,Ontario</button>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <div class="logo" style="display: flex; align-items: center; gap: 12px;">
+                    <img src="./Screenshot 2025-05-17 232551.png" alt="UOL white logo" style="height: 48px; width: auto; display: block;" />
+                    <h3 style="margin: 0;">Toronto University</h3>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Campus Life</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Toronto University, Ontario</h1>
+                <p>Empowering minds, Shaping futures</p>
+                <p>Please submit your form here. We ensure complete safety and data protection using high-quality Docker Containers and Kubernetes</p>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <div class="container">
+                <div class="link-grid">
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Student Portal</span>
+                    </a>
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-book"></i>
+                        <span>Library</span>
+                    </a>
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-calendar"></i>
+                        <span>Academic Calendar</span>
+                    </a>
+                    <a href="#" class="quick-link-card">
+                        <i class="fas fa-newspaper"></i>
+                        <span>News & Events</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="news-section">
+                        <h2>Latest Announcements</h2>
+                        <div class="news-list">
+                            <article class="news-item">
+                                <span class="date">March 15, 2024</span>
+                                <h3>Spring Semester Registration Now Open</h3>
+                                <p>Register for your courses for the upcoming semester...</p>
+                            </article>
+                            <article class="news-item">
+                                <span class="date">March 14, 2024</span>
+                                <h3>Research Grant Opportunities</h3>
+                                <p>New funding opportunities available for graduate students...</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="signup-section">
+                        <h2>Create Your Account</h2>
+                        <form action="http://localhost:5050/addUser" method="POST" id="signupForm">
+
+                            <div class="field">
+                                <label for="email">Email Address</label>
+                                <input type="email" placeholder="jane@email.com" name="email" required>
+                            </div>
+                            <div class="field">    
+                                <label for="username">Full Name</label>
+                                <input type="text" placeholder="Jane Doe" name="username" required>
+                            </div>
+                            <div class="field">
+                                <label for="password">Password</label>
+                                <input type="password" placeholder="Create a strong password" name="password" required>
+                            </div>
+                            
+                            <div class="field">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the terms and conditions
+                                </label>
+                            </div>
+                            <button type="submit" id="formBtn">Create Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Toronto University</p>
+                    <p>City, State 12345</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@Toronto University.edu</p>
+                    <h4>Made by Siddartha Kone</h4>
+                    <h5>KAKATIYA INSTITUTE OF TECHNOLOGY & SCIENCE</h5>
+                    <h5>B22IT039</h5>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Emergency Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <p>My First Project With D&K</p>
+                        <p>Used Docker and Kubernetes</p>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Toronto University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+document.getElementById('signupForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // stop the default form behavior
+
+    const formData = new FormData(this); // get data from form
+
+    const data = {
+        email: formData.get('email'),
+        username: formData.get('username'),
+        password: formData.get('password')
+    };
+
+    fetch("http://localhost:5050/addUser", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res => {
+        if (!res.ok) throw new Error("Server error");
+        return res.text();
+    })
+    .then(msg => {
+        alert("✅ Successfully submitted: " + msg);
+        console.log(msg);
+    })
+    .catch(err => {
+        alert("❌ Error: " + err.message);
+        console.error(err);
+    });
+});
+</script>
+
+</body>
+</html>
